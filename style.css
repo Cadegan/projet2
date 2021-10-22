@@ -154,6 +154,17 @@ h1, h2, p {
 	right: 100px;
 }
 
+#menu a:hover {
+    border-top: 5px solid; color: #0065FC; 
+    text-decoration-color: skyblue;
+}
+
+li {
+    display: inline;
+    margin: 10px;
+}
+
+
 a:link {
     text-decoration: none;
 }
@@ -162,37 +173,26 @@ a:visted {
     text-decoration: none; /*ça ne marche pas. Le lien reste "visité" */
 }
 
-#menu a:hover {
-    border-top-style: solid;
-    text-decoration-color: skyblue;
-}
-
-
 .logo-localisation {
     padding: 1em;
     width: 3%;
 }
 
-.div-recherche {
+#div-recherche {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin: 10px;
 }
 
-.form-recherche {
-    text-align: left;
-}
-
-li {
-	display: inline;
-	list-style: none;
-	margin: 10px;
-}
-
-#filtre
-{
+#filtre {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.bg-results {
+ width: auto;
+ height: auto;
+ background-color: grey;
 }
