@@ -10,7 +10,7 @@
 <body>
     <div id="bloc_page">
         <header>
-            <nav>
+            <nav id="nav">
                 <ul id="menu">
                     <li><a href="#">Hébergement</a></li>
                     <li><a href="#">Activités</a></li>
@@ -22,8 +22,33 @@
             </div>
 
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
+
             <p>En plein centre ville ou en pleine nature</p>
         </header>
+
+        <div id="div-recherche">
+            <img class="logo-localisation" src="images/logo/MapMarker.svg" alt="Logo-localisation"/>
+                <form class="form-recherche" method="post" action="#">
+                    <div id="zone-recherche">
+                        <input type="text" name="ville" id="ville"></div>                
+                </form>
+        </div>
+
+        <div id="filtre">
+                <spam class="choix-filtre">Filtres</spam>
+                     <div class="choix-filtre"><a href="#">Économique</a></div>
+                    <div class="choix-filtre"><a href="#">Familiale</a></div>
+                     <div class="choix-filtre"><a href="#">Romantique</a></div>
+                     <div class="choix-filtre"><a href="#">Animaux autorisés</a></div>
+            </div>
+        
+
+        <div id="disponibilite">
+            <img src="images/logo/iMark.svg" alt="Logo iMark" />
+            <span>Plus de 500 logement sont disponibles dans cette ville</spam>
+        </div>
+
+
     </div>
 
 </body>
