@@ -1,3 +1,5 @@
+/* polices*/
+
 @font-face {
     font-family: 'ralewayblack';
     src: url('fonts/raleway-black.woff2') format('woff2'),
@@ -139,19 +141,37 @@
 
 }
 
+/*Eléments de la page*/
+
+/*
+body{
+    margin-top:0px;
+}
+*/
 #bloc_page {
-	width: 992px;
-	margin: auto;
+    width: 900px;
+    margin: auto;
 }
 
-h1, h2, p {
-	font-family: ralewaylight;
-	font-weight: normal;
+section h1, footer h1, nav a
+{
+    font-family: ralewaymedium, sans-serif;
+    font-weight: normal;
+    font-size: small;
 }
 
-#menu {
-	position: absolute;
-	right: 100px;
+/*Menu*/
+
+#logo-booki img{
+    width: 60px;
+    height: auto;
+}
+
+#nav {
+    position: absolute;
+    right: 200px;
+    margin-top: -85px;
+    padding-top: 0px;
 }
 
 #menu a:hover {
@@ -162,6 +182,7 @@ h1, h2, p {
 li {
     display: inline;
     margin: 10px;
+    line-height: 5;
 }
 
 
@@ -170,7 +191,7 @@ a:link {
 }
 
 a:visted {
-    text-decoration: none; /*ça ne marche pas. Le lien reste "visité" */
+    color: #black; /*ça ne marche pas. Le lien reste "visité" */
 }
 
 .logo-localisation {
