@@ -167,6 +167,13 @@ h1
     font-size: 16px;
 }
 
+h3
+{
+    font-family: ralewaymedium, sans-serif;
+    font-weight: bold;
+    font-size: small;
+}
+
 p
 {
     font-family: ralewaymedium, sans-serif;
@@ -280,10 +287,16 @@ input {
 
 #filtre {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    width: 500px;
+}
+
+.logo-bg-filtre {
+    display: flex;
     align-items: center;
 }
 
+/*Résultats Hébergements à Marseille*/
 .bg-results {
  width: 250px;
  height: 110px;
