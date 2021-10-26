@@ -153,12 +153,27 @@ body{
     margin: auto;
 }
 
-section h1, footer h1, nav a
+*
 {
     font-family: ralewaymedium, sans-serif;
     font-weight: normal;
-    font-size: small;
+    font-size: normal;
 }
+
+h1
+{
+    font-family: ralewaymedium, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+p
+{
+    font-family: ralewaymedium, sans-serif;
+    font-weight: normal;
+    font-size: 12px;
+}
+
 
 /*Menu*/
 
@@ -170,6 +185,8 @@ section h1, footer h1, nav a
 #nav {
     position: absolute;
     right: 200px;
+    width: auto;
+    height: 100px;
     margin-top: -85px;
     padding-top: 0px;
 }
@@ -194,17 +211,72 @@ a:visted {
     color: #black; /*ça ne marche pas. Le lien reste "visité" */
 }
 
-.logo-localisation {
-    padding: 1em;
-    width: 3%;
+/*Menu de recherche*/
+
+#formulaire-recherche {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    width: 320px;
+    border: 0.5px solid #f2f2f2;
+    border-radius: 10px;
 }
 
-#div-recherche {
+.logo-bg {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin: 10px;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #f2f2f2;
+    border-radius: 10px 0px 0px 10px;
 }
+
+#logo-localisation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+}
+
+.txt-recherche {
+    border: none;
+    -webkit-appearance: none;
+    padding-left: 20px;
+}
+
+input {
+    height: 100%; /*ne fonctionne pas*/
+    box-sizing: border-box;
+}
+
+.bt-rechercher {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: white;
+    height: 40px;
+    width: 100px;
+    background-color: #0065FC;
+    border-radius: 0px 10px 10px 0px;
+
+}
+
+.bt-rechercher a {
+    font-size: small;
+    color: white;
+    font-weight: bold;
+    box-sizing: content-box;
+}
+
+.bt-rechercher a:hover {
+    color: #C3CEE8;
+}
+
+
+/*Filtre de recherche*/
 
 #filtre {
     display: flex;

@@ -15,28 +15,32 @@
             </div>
             <nav id="nav">
                 <ul id="menu">
-                    <li><a href="#">Hébergement</a></li>
-                    <li><a href="#">Activités</a></li>
+                    <li><a href="#section-herbergement">Hébergement</a></li>
+                    <li><a href="#section-activites">Activités</a></li>
                 </ul>
             </nav>
-
-            
 
             <h1>Trouver votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
         </header>
 
-        <div id="div-recherche">
-            <img class="logo-localisation" src="images/logo/MapMarker.svg" alt="Logo-localisation"/>
-                <form class="form-recherche" method="post" action="#">
-                    <div id="zone-recherche">
-                        <input type="text" name="ville" id="ville"></div>                
-                </form>
-            <div id="bt-rechercher">Rechercher</div>
-        </div>
 
+<!-- Barre de recherche -->
+<section id="formulaire-recherche">
+        <div class="logo-bg">
+            <img id="logo-localisation" src="images/logo/MapMarker.svg" alt="Logo-localisation"/>
+        </div>
+        <div>
+            <form method="post" action="#">
+              <input class="txt-recherche" type="text" name="ville" id="ville" placeholder="Marseille, France">                
+            </form>
+        </div>
+        <div class="bt-rechercher"><a href="#">Rechercher</a></div>
+</section>
+
+<!--Fitres-->
         <div id="filtre">
-                <spam class="choix-filtre">Filtres</spam>
+                <h3 class="choix-filtre">Filtres</h3>
                      <div class="choix-filtre"><a href="#">Économique</a></div>
                     <div class="choix-filtre"><a href="#">Familiale</a></div>
                      <div class="choix-filtre"><a href="#">Romantique</a></div>
