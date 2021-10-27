@@ -143,11 +143,10 @@
 
 /*Eléments de la page*/
 
-/*
 body{
-    margin-top:0px;
+    margin:0px;
 }
-*/
+
 #bloc_page {
     width: 900px;
     margin: auto;
@@ -184,29 +183,29 @@ p
 
 /*Menu*/
 
-#logo-booki img{
-    width: 60px;
-    height: auto;
+#entete {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 0px;
+    margin-bottom: 0px;
 }
 
-#nav {
-    position: absolute;
-    right: 200px;
-    width: auto;
-    height: 100px;
-    margin-top: -85px;
-    padding-top: 0px;
+#entete ul {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style-type: none;
 }
 
-#menu a:hover {
+#li-hebergement {
+   padding-right: 80px;
+}
+
+
+#entete a:hover {
     border-top: 5px solid; color: #0065FC; 
     text-decoration-color: skyblue;
-}
-
-li {
-    display: inline;
-    margin: 10px;
-    line-height: 5;
 }
 
 
@@ -215,7 +214,7 @@ a:link {
 }
 
 a:visted {
-    color: #black; /*ça ne marche pas. Le lien reste "visité" */
+    color: black; /*ça ne marche pas. Le lien reste "visité" */
 }
 
 /*Menu de recherche*/
@@ -254,7 +253,7 @@ a:visted {
 }
 
 input {
-    height: 100%; /*ne fonctionne pas*/
+    height: 40px;
     box-sizing: border-box;
 }
 
