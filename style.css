@@ -286,18 +286,87 @@ input {
 
 #filtre {
     display: flex;
+    margin-top: 20px;
     align-items: center;
-    width: 500px;
+    width: 800px;
+}
+
+.choix-filtre {
+    display: flex;
+    align-items: center;
+    height: 40px;
+    margin-right: 20px;
+    border: 2px solid #f2f2f2;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.choix-filtre a {
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .logo-bg-filtre {
     display: flex;
     align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    background-color: #DEEBFF;
+    border-radius: 25px 25px 25px 25px;
+}
+
+.logo-bg-filtre img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 15px;
+    width: 15px;
+}
+
+/* Info disponibilité */
+#disponibilite {
+    display: flex;
+    align-items: center;
+}
+
+#disponibilite img {
+    height: 20px;
+    width: 20px;
+    padding-right: 5px;
 }
 
 /*Résultats Hébergements à Marseille*/
-.bg-results {
- width: 250px;
- height: 110px;
- background-color: grey;
+.bg-results-hebergements {
+    background-color: #f2f2f2;
+    border-radius: 15px 15px 15px 15px;
+    padding: 20px;
+    width: 650px;
+    height: 350px;
+ 
+}
+
+#affichage-results h1, h3{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#resultats-marseille {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: space-between;
+    height: 260px;
+}
+
+.tuille-herbegement {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    padding: 10px;
+    width: 170px;
+    height: 100px;
+    box-shadow: 2px 2px 10px lightgrey;
 }
