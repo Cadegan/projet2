@@ -336,6 +336,10 @@ input {
 }
 
 /*Résultats Hébergements à Marseille*/
+#section-herbergement {
+    display: flex;
+}
+
 .bg-results-hebergements {
     display: flex;
     flex-direction: column;
@@ -361,6 +365,8 @@ input {
     align-content: space-between;
     height: 320px;
 }
+
+/*tuilles hébergemnts*/
 
 .tuille-herbegement {
     display: flex;
@@ -405,4 +411,108 @@ input {
 .stars img {
     width: 80px;
     height: 100%
+}
+
+/*Les plus populaires*/
+
+aside {
+    display: flex;
+    flex: 0.3;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    background-color: #f2f2f2;
+    border-radius: 15px 15px 15px 15px;
+    padding: 20px;
+    margin-left: 35px;
+}
+
+#titre-populaires {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}   
+
+#titre-populaires img {
+    height: 15px;
+    width: 15px;
+}
+
+#titre-populaires h1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/*tuilles populaires*/
+
+.tuille-populaires {
+    display: flex;
+    justify-content: left;
+    background-color: white;
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px;
+    width: 260px;
+    height: 100px;
+    box-shadow: 2px 2px 10px lightgrey;
+}
+
+.image-hotel-populaires {
+    border-radius: 10px 0px 0px 10px;
+    width: 100px;
+    overflow: hidden;
+}
+
+.image-hotel-populaires img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100px;
+}
+
+.informations-populaires {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.informations-populaires p {
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.informations-populaires-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.bg-results-hebergements h1, h3 {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.stars-populaires {
+    width: 30px;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+.stars-populaires img {
+    width: 80px;
+    height: 100%
+}
+
+/*Activités à Marseille*/
+
+.activites {
+    display: flex;
+    align-items: row;
+}
+
+.image-hotel-populaires img {
+    background: ;
 }
