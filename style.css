@@ -505,14 +505,6 @@ aside {
 
 /*Activités à Marseille*/
 
-.activites {
-    display: flex;
-    align-content: center;
-    justify-content: space-between;
-    width: 100%;
-    height: 600px;
-}
-
 #section-activites {
     margin-bottom: 35px;
 }
@@ -522,18 +514,25 @@ aside {
     margin-bottom: 20px;
 }
 
+.activites {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .tuille-activites {
     display: flex;
     flex-direction: column;
     align-content: center;
-    justify-content: center;
+    justify-content: flex-start;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 10px lightgrey;
 }
 
 .tuille-activites img {
     width: 100%;
-    height: 100px;
+    height: 150px;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -541,4 +540,9 @@ aside {
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 3px;
+}
+
+.activite-petit {
+    display: flex;
+    
 }
