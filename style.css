@@ -506,6 +506,8 @@ aside {
 /*Activités à Marseille*/
 
 #section-activites {
+    display: flex;
+    flex-direction: column;
     margin-bottom: 35px;
 }
 
@@ -526,6 +528,7 @@ aside {
     flex-direction: column;
     align-content: center;
     justify-content: flex-start;
+    width: 225px;
     border-radius: 10px 10px 10px 10px;
     box-shadow: 2px 2px 10px lightgrey;
 }
@@ -545,4 +548,21 @@ aside {
 .activite-petit {
     display: flex;
     
+}
+
+/*footer*/
+footer {
+    background-color: #F2F2F2;
+}
+
+#nav-footer {
+    display: flex;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+}
+
+#nav-footer ul {
+    list-style-type: none;
+    padding: 0px;
 }
