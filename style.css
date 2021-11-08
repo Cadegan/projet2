@@ -210,6 +210,14 @@ a
     list-style-type: none;
 }
 
+
+#entete img
+{
+    width: 70px;
+    margin-left: 5px;
+}
+
+
 #li-hebergement {
    padding-right: 80px;
 }
@@ -370,7 +378,7 @@ input {
     background-color: #f2f2f2;
     border-radius: 15px 15px 15px 15px;
     padding: 20px;
-    width: 700px;
+    width: 100%;
     /*height: 450px;*/
  
 }
@@ -729,7 +737,7 @@ margin-bottom: 5px;
 
     .bg-results-hebergements
     {
-        width: 90%;
+        width: 95%;
         margin-bottom: 25px;
     }
 
@@ -742,7 +750,7 @@ margin-bottom: 5px;
     #aside-populaires
     {
         margin-left: 0px;
-        width: 90%;
+        width: 95%;
     }
 
     #titre-populaires
@@ -774,5 +782,19 @@ margin-bottom: 5px;
     {
         height: 100%;
         justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px)
+{
+    #entete
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #entete img
+    {
+        url("img/bgd.jpg")
     }
 }
