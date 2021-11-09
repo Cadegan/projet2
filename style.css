@@ -203,29 +203,31 @@ a
     margin-bottom: 20px;
 }
 
-#entete ul {
-    display: flex;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    list-style-type: none;
-}
-
-
+/*
 #entete img
 {
     width: 70px;
     margin-left: 5px;
 }
+*/
 
+#navigation
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-#li-hebergement {
-   padding-right: 80px;
+#nav-herbergement
+{
+    padding-right: 50px;
 }
 
 
 #entete a:hover {
     border-top: 5px solid; color: #0065FC; 
     text-decoration-color: skyblue;
+    cursor: pointer;
 }
 
 
@@ -240,6 +242,11 @@ a:visted {
 
 /*Menu de recherche*/
 
+#recherche
+{
+    display: flex;
+}
+
 #formulaire-recherche {
     display: flex;
     align-items: center;
@@ -249,12 +256,17 @@ a:visted {
     border-radius: 10px;
 }
 
+#formulaire-text
+{
+    width: 100%;
+}
+
 .logo-bg {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 40px;
-    width: 40px;
+    height: 100%;
+    width: 20%;
     background-color: #f2f2f2;
     border-radius: 10px 0px 0px 10px;
 }
@@ -271,6 +283,7 @@ a:visted {
     border: none;
     -webkit-appearance: none;
     padding-left: 20px;
+    width: 100%;
 }
 
 input {
@@ -284,8 +297,8 @@ input {
     justify-content: center;
     font-weight: bold;
     color: white;
-    height: 40px;
-    width: 100px;
+    height: 100%;
+    width: 50%;
     background-color: #0065FC;
     border-radius: 0px 10px 10px 0px;
 
@@ -296,6 +309,11 @@ input {
     color: white;
     font-weight: bold;
     box-sizing: content-box;
+}
+
+#loupe
+{
+    display: none;
 }
 
 .bt-rechercher a:hover {
@@ -315,6 +333,12 @@ input {
 #filtre h3
 {
     margin-bottom: 0px;
+    margin-right: 20px;
+}
+
+#liste-filtre
+{
+    display: flex;
 }
 
 .choix-filtre {
@@ -727,8 +751,11 @@ margin-bottom: 5px;
 
 @media screen and (max-width: 992px)
 {
-    #bloc-page 
-    
+    #liste-filtre
+    {
+        justify-content: space-between;
+        width: 80%;
+    }
 
     #section-herbergement
     {
@@ -750,7 +777,6 @@ margin-bottom: 5px;
     #aside-populaires
     {
         margin-left: 0px;
-        width: 95%;
     }
 
     #titre-populaires
@@ -787,6 +813,14 @@ margin-bottom: 5px;
 
 @media screen and (max-width: 768px)
 {
+    body
+    {
+        margin:0px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+
     #entete
     {
         display: flex;
@@ -795,6 +829,174 @@ margin-bottom: 5px;
 
     #entete img
     {
-        url("img/bgd.jpg")
+        margin-bottom: 20px;
     }
+
+   #navigation
+   {
+    width: 100%;
+    justify-content: space-evenly;
+   }
+
+   #nav-herbergement
+   {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    padding-right: 0px;
+    border-bottom: 5px solid; color: #f2f2f2;
+   }
+
+    #nav-herbergement a
+   {
+    padding-bottom: 10px;
+   }
+
+    #nav-activites
+   {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    border-bottom: 5px solid; color: #f2f2f2;
+   }
+
+    #nav-activites a
+   {
+    padding-bottom: 10px;
+   }
+
+   #entete a:hover 
+   {
+    border-top: none; 
+    text-decoration-color: #0065FC;
+    cursor: pointer;
+    }
+
+    #nav-herbergement:hover 
+    {
+    border-color: #0065fc;
+      border-bottom: 5px solid, color: #0065fc;
+      cursor: pointer;
+    }
+
+     #nav-activites:hover 
+    {
+    border-color: #0065fc;
+      border-bottom: 5px solid, color: #0065fc;
+      cursor: pointer;
+    }
+       
+    #reve
+    {
+        margin-left: 10px;
+        margin-right: 50px;
+    }
+
+    #reve h1
+    {
+        padding-bottom: 5px;
+    }
+
+    #formulaire-recherche
+    {
+        width: 90%;
+        justify-content: space-between;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    #recherche
+    {
+        display: flex;
+        justify-content: center;
+    }
+
+    .bt-rechercher
+    {
+        width: 20%;
+        border-radius : 10px 10px 10px 10px
+    }
+
+    .bt-rechercher a
+    {
+        display: none;
+    }
+
+    #loupe
+    {
+        display: flex;
+        height: 50%;
+    }
+
+#filtre
+    {
+        align-items: start;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 10px;
+    }
+
+#filtre h3
+    {
+        margin-bottom: 10px;
+    }
+
+#liste-filtre
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-content: space-between;
+        height: 100px;
+    }
+
+.choix-filtre
+    {
+        margin-left: 0px;
+        margin-right: 0px;
+
+    }
+
+.bg-results-hebergements:nth-child(1)
+    {
+        order: 2;
+    }
+
+#aside-populaires:nth-child(2)
+    {
+       order: 1; 
+    }
+
+#aside-populaires
+    {
+        margin-bottom: 20px;
+        border-radius: 0px 0px 0px 0px;
+    }
+
+.bg-results-hebergements
+    {
+        background-color: white;
+        margin: auto;
+    }
+
+#resultats-marseille
+    {
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+
+.tuille-herbegement
+    {
+        width: 93%;
+    }
+
+.activites
+    {
+        flex-direction: column;
+    }
+
+
+
+
+
 }

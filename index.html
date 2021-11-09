@@ -10,43 +10,54 @@
 <body>
     <div id="bloc-page">
         <header>
-            <div id="entete">
-                <picture>
-                    <source media="(max-width: 768px)" srcset="images/logo/Booki@3x.png">
-                    <source media="(min-width: 992px)" srcset="images/logo/Booki.png">
-                    <img src="images/logo/Booki.png" alt="Logo de Booki" />
-                </picture>
-                <nav>
-                    <ul>
-                        <li style="padding-right: 80px;"><a href="#section-herbergement">Hébergement</a></li>
-                        <li><a href="#section-activites">Activités</a></li>
-                    </ul>
-                </nav>
-            </div>
-                
+            <nav>
+                <div id="entete">
+                    <img srcset="images/logo/Booki.png 191w,
+                                 images/logo/Booki@3x.png 3x"
+                         sizes="(max-width: 768px) 200px, 70px"
+                         src="images/logo/Booki.png" alt="Logo de Booki" />        
+                                        
+                    <div id="navigation">
+                        <div id="nav-herbergement">
+                            <a href="#section-herbergement">Hébergement</a>
+                        </div>
+                        <div id="nav-activites">
+                             <a href="#section-activites">Activités</a>
+                        </div>
+                    </div>                     
+                </div>
+            </nav>    
 
+            <div id="reve">
                 <h1 style="margin-bottom: 0px;">Trouver votre hébergement pour des vacances de rêve</h1>
                 <p style="margin-top: 0px; color: dimgrey;">En plein centre ville ou en pleine nature</p>
-            </header>
+            </div>
+        </header>
 
 
         <!-- Barre de recherche -->
-        <section id="formulaire-recherche">
+        <section id="recherche">
+            <div id="formulaire-recherche">
                 <div class="logo-bg">
                     <img id="logo-localisation" src="images/logo/MapMarker.svg" alt="Logo-localisation"/>
                 </div>
-                <div>
+                <div id="formulaire-text">
                     <form method="post" action="#">
                       <input class="txt-recherche" type="text" name="ville" id="ville" placeholder="Marseille, France">                
                     </form>
                 </div>
-                <div class="bt-rechercher"><a href="#">Rechercher</a></div>
+                <div class="bt-rechercher">
+                    <a href="#">Rechercher</a>
+                    <img id="loupe" src="images/logo/loupe.svg" alt="Loupe">
+                </div>
+            </div>
         </section>
 
         <!--Fitres-->
         <section id="filtre"> 
-                <h3>Filtres</h3>
-                    <div class="choix-filtre" style="margin-left: 30px;">
+            <h3>Filtres</h3>
+                <div id="liste-filtre">
+                    <div class="choix-filtre">
                         <div class="logo-bg-filtre">
                             <img id="logo-economique" src="images/logo/money-bill-wave-solid.svg" alt="Logo-localisation"/>
                         </div>
@@ -56,7 +67,7 @@
                     <div class="choix-filtre">
                         <div class="logo-bg-filtre">
                             <img id="logo-familial" src="images/logo/Family.svg" alt="Logo-familial"/></div>
-                        <a href="#">Familiale</a>
+                        <a href="#">Familial</a>
                     </div>
 
                     <div class="choix-filtre">
@@ -72,6 +83,7 @@
                         </div>
                         <a href="#">Animaux autorisés</a>
                     </div>
+                </div>
         </section>
 
         <!--Affichage disponibilité-->
