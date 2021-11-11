@@ -12,18 +12,16 @@
         <header>
             <nav>
                 <div id="entete">
-                    <img srcset="images/logo/Booki.png 191w,
-                                 images/logo/Booki@3x.png 3x"
-                         sizes="(max-width: 768px) 200px, 70px"
-                         src="images/logo/Booki.png" alt="Logo de Booki" />        
+                    <div id="entete-img">
+                        <img srcset="images/logo/Booki.png 191w,
+                                     images/logo/Booki@3x.png 3x"
+                             sizes="(max-width: 768px) 200px, 70px"
+                             src="images/logo/Booki.png" alt="Logo de Booki" />    
+                    </div>    
                                         
                     <div id="navigation">
-                        <div id="nav-herbergement">
-                            <a href="#section-herbergement">Hébergement</a>
-                        </div>
-                        <div id="nav-activites">
-                             <a href="#section-activites">Activités</a>
-                        </div>
+                        <a href="#section-herbergement" class="nav">Hébergement</a>
+                        <a href="#section-activites" class="nav">Activités</a>
                     </div>                     
                 </div>
             </nav>    
@@ -46,10 +44,10 @@
                       <input class="txt-recherche" type="text" name="ville" id="ville" placeholder="Marseille, France">                
                     </form>
                 </div>
-                <div class="bt-rechercher">
-                    <a href="#">Rechercher</a>
+                <a href="#" class="bt-rechercher">
+                    <p>Rechercher</p>
                     <img id="loupe" src="images/logo/loupe.svg" alt="Loupe">
-                </div>
+                </a>
             </div>
         </section>
 
@@ -57,32 +55,33 @@
         <section id="filtre"> 
             <h3>Filtres</h3>
                 <div id="liste-filtre">
-                    <div class="choix-filtre">
+                    <a href="#" class="choix-filtre">
                         <div class="logo-bg-filtre">
-                            <img id="logo-economique" src="images/logo/money-bill-wave-solid.svg" alt="Logo-localisation"/>
+                             <img id="logo-economique" src="images/logo/money-bill-wave-solid.svg" alt="Logo-localisation"/>
                         </div>
-                        <a href="#">Économique</a>
-                    </div>
+                        <p>Économique</p>
+                    </a>
 
-                    <div class="choix-filtre">
+                    <a href="#" class="choix-filtre">
                         <div class="logo-bg-filtre">
-                            <img id="logo-familial" src="images/logo/Family.svg" alt="Logo-familial"/></div>
-                        <a href="#">Familial</a>
-                    </div>
-
-                    <div class="choix-filtre">
-                        <div class="logo-bg-filtre">
-                            <img id="logo-romantique" src="images/logo/heart.svg" alt="Logo-romantique"/>
+                             <img id="logo-familial" src="images/logo/Family.svg" alt="Logo-familial"/>
                         </div>
-                        <a href="#">Romantique</a>
-                    </div>
-
-                    <div class="choix-filtre">
+                        <p>Familial</p>
+                    </a> 
+                    
+                    <a href="#" class="choix-filtre">
                         <div class="logo-bg-filtre">
-                            <img id="logo-animaux" src="images/logo/dog.svg" alt="Logo-animaux"/>
+                             <img id="logo-romantique" src="images/logo/heart.svg" alt="Logo-romantique"/>
                         </div>
-                        <a href="#">Animaux autorisés</a>
-                    </div>
+                        <p>Romantique</p>
+                    </a>
+
+                    <a href="#" class="choix-filtre">
+                        <div class="logo-bg-filtre">
+                             <img id="logo-animaux" src="images/logo/dog.svg" alt="Logo-animaux" alt="logo-animaux"/>
+                        </div>
+                        <p>Animaux autorisés</p>
+                    </a>
                 </div>
         </section>
 
