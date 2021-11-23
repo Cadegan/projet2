@@ -507,7 +507,6 @@ body{
 {
     font-family: ralewaymedium, sans-serif;
     font-weight: normal;
-    font-size: normal;
 }
 
 h1
@@ -544,7 +543,7 @@ a:link {
     color: black;
 }
 
-a:visted {
+a:visited {
     color: black;
 }
 
@@ -602,11 +601,10 @@ header
    }
 
 .nav:hover 
-{
-    border-color: #0065fc;
-    border-top: 3px solid, color: #0065fc;
+{   
+    border-top: 3px solid #0065fc;
     cursor: pointer;
-    color: #0065FC;
+  
 }
 
 /*Menu de recherche*/
@@ -1306,8 +1304,7 @@ margin-bottom: 10px;
 
     .nav:hover 
     {
-        border-color: #0065fc;
-        border-bottom: 5px solid, color: #0065fc;
+        border-bottom: 5px solid #0065fc;
         cursor: pointer;
     }
 
